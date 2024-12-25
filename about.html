@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="احتفالية اليوم العالمي للغة العربية - جمال وفن لغة الضاد">
+    <title>عن اليوم</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Noto Kufi Arabic", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(114, 186, 223, 0.904), rgba(6, 21, 238, 0.719));
+            color:white;
+        }
+
+        header  img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+            box-shadow: 0 6px 15px  rgba(114, 186, 223, 0.904), rgba(6, 21, 238, 0.719);
+            border-color: #ffffff;
+    }
+
+    header h1 {
+    font-size: 120px;
+    margin: 0;
+    background: white;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.5s ease, transform 0.2s ease, text-shadow 0.3s ease;
+}
+
+header h1:hover {
+    background-position: 50%; /* Gradient wave */
+    transform: scale(1.1);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 45px rgba(255, 255, 255, 0.5);
+}
+    header p {
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(65, 80, 107, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+header p:hover {
+    color: linear-gradient(90deg, #0492ffe9, #1f769f, #ffffff);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 45px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.heading{
+    text-align: center;
+}
+
+@keyframes slideUpFadeIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.heading h2 {
+    font-size: 6rem;
+    animation: slideUpFadeIn 2s ease-out forwards; /* Apply the animation */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    background: linear-gradient(135deg, rgba(114, 186, 223, 0.904), rgba(6, 21, 238, 0.719));
+    background-size: 300%; 
+    animation: gradientMove 5s linear infinite; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 0 15px;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff; /* Change text color on hover */
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ffffff; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left; 
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.about-container {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا في المنتصف */
+    justify-content: flex-start; /* محاذاة العناصر أفقيًا */
+    gap: 20px; /* إضافة مسافة بين الصورة والنص */
+}
+
+.about-img{
+    display: flex;
+    justify-content:right;
+    align-items:right;
+}
+
+.about-img img {
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+}
+
+.about-img img:hover {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    box-shadow: 
+        0 0 15px var(--main-color),
+        0 0 30px var(--main-color),
+        0 0 45px var(--main-color),
+        0 0 60px rgba(0, 0, 0, 0.2); /* Subtle dark shadow */
+    border-radius: 50%; /* Adds rounded effect on hover */
+    filter: brightness(1.2); /* Slightly increases brightness */
+}
+
+.about-text p {
+    font-size: 3rem; /* حجم النص */
+    font-weight: 600; /* جعل النص أكثر سمكًا */
+    color: #333; /* لون النص */
+    text-align: center; /* توسيط النص */
+    line-height: 1.5; /* مسافة بين الأسطر */
+    letter-spacing: 2px; /* إضافة تباعد بين الحروف */
+    transition: all 0.3s ease; /* تأثير سلس عند التفاعل */
+    transform: scale(1); /* بداية الحجم الطبيعي */
+    margin-bottom: 20px; /* المسافة أسفل النص */
+    text-align: right;
+    padding-right: 9rem;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+}
+
+.about-text p:hover {
+    transform: scale(1.1); /* تكبير النص عند التمرير */
+    color: #007bff; /* تغيير اللون عند التمرير */
+    text-shadow: 0 4px 6px rgba(0, 123, 255, 0.3), 0 1px 3px rgba(0, 123, 255, 0.5); /* تأثير الظل حول النص */
+}
+
+footer {
+    background: linear-gradient(135deg, rgba(18, 109, 245, 0.8), rgba(72, 61, 139, 0.8));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow on top */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
+}
+
+footer a {
+    color: #ffcc00; /* Bright accent color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff; /* Hover effect on links */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+footer:hover {
+    background: linear-gradient(135deg, rgba(18, 109, 245, 1), rgba(72, 61, 139, 1));
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 5px;
+    background: rgba(255, 204, 0, 0.7); /* Decorative bar with accent color */
+    border-radius: 5px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Pulsing animation for decorative element */
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scaleX(1);
+    }
+    50% {
+        transform: translateX(-50%) scaleX(1.5);
+    }
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photo_2024-12-24_18-08-02-removebg-preview.png" alt="شعار" style="max-width: 300px;">
+        <h1>اليوم العالمي للغة العربية</h1>
+        <p>احتفل بجمال وإرث لغة الضاد في يومها العالمي</p>
+    </header>
+
+    <nav>
+        <a href="about.html">عن اليوم</a>
+        <a href="index.html">فعاليات</a>
+        <a href="#gallery">معرض الصور</a>
+    </nav>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>عن اليوم</h2>
+        </div>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="2139437 - Copy.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <p>
+                    اليوم العالمي للغة العربية 🌍📚<br>
+                    تاريخ الاحتفال: يتم الاحتفال باليوم العالمي للغة العربية في 18 ديسمبر من كل عام. هذا التاريخ يوافق اليوم الذي اعتمدت فيه الأمم المتحدة اللغة العربية كواحدة من اللغات الرسمية ولغات العمل في المنظمة عام 1973. <br>
+                    
+                    شعار اليوم العالمي 2024 🌐 <br>
+                    يتمحور الاحتفال هذه السنة حول: <br>
+                    "دور اللغة العربية في الابتكار والإبداع الثقافي" <br>
+                    وذلك للتأكيد على أن العربية ليست فقط لغة تراثية، بل هي لغة المستقبل التي تواكب التطور العلمي والتكنولوجي. <br>
+                    
+                    💙 اللغة العربية ليست مجرد وسيلة للتواصل، بل هي هوية، حضارة، وإرث نفخر به جميعًا. <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="about.js"></script>
+
+    <footer id="contact">
+        <p>&copy; 2024 - احتفالية اليوم العالمي للغة العربية</p>
+        <p>للتواصل: info@arabicday.com</p>
+    </footer>
+</body>
+</html>

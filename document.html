@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="أبحاث أعضاء هيئة التدريس في مجال اللغة العربية">
+    <title>أبحاث أعضاء هيئة التدريس - اللغة العربية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Noto Kufi Arabic", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #1f3c72;
+            color: white;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(114, 186, 223, 0.904), rgba(6, 21, 238, 0.719));
+            padding: 7rem;
+        }
+
+        header  img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+            box-shadow: 0 6px 15px  rgba(114, 186, 223, 0.904), rgba(6, 21, 238, 0.719);
+            border-color: #ffffff;
+    }
+
+    header h1 {
+    font-size: 7rem;
+    margin: 0;
+    background: linear-gradient(45deg, #ffffffab, #85a6f0);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.5s ease, transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+header h1:hover {
+    background-position: 100% 0;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+    color: #ffcc00;
+}
+header p {
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(65, 80, 107, 0.5), 0 0 20px rgba(255, 255, 255, 0.4);
+    transition: text-shadow 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+header p:hover {
+    color: linear-gradient(90deg, #0492ffe9, #1f769f, #ffffff);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.6), 0 0 45px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    background: linear-gradient(135deg, rgba(114, 186, 223, 0.904), rgba(6, 21, 238, 0.719));
+    background-size: 300%; 
+    animation: gradientMove 5s linear infinite; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 5px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.9rem;
+    margin: 0 15px;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff; /* Change text color on hover */
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ffffff; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left; 
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+        .research-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0%;
+        }
+
+.research-item .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.research-item .prof{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+.research-item .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+        .research-item {
+            background-color: #fff;
+            margin: 15px;
+            padding: 60px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .research-item:hover {
+            transform: scale(1.05);
+        }
+        .research-item h3 {
+            font-size: 5rem;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .research-item p {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .research-item a {
+            text-decoration: none;
+            color: #007bffc2;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 1.5rem;
+        }
+        .research-item a:hover {
+            color: #0056b3;
+        }
+        .research-details {
+            display: none;
+            background-color: #f9f9f9;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .research-details p, a{
+            display: flex;
+           align-items: center;
+           justify-content: center;
+           gap:1rem;
+           font-size: 3.5rem;
+        }
+
+        .research-details .go{
+            font-size: 3.5rem;
+        }
+
+        footer {
+    background: linear-gradient(135deg, rgba(18, 109, 245, 0.8), rgba(72, 61, 139, 0.8));
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow on top */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow for readability */
+}
+
+footer a {
+    color: #ffcc00; /* Bright accent color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff; /* Hover effect on links */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+footer:hover {
+    background: linear-gradient(135deg, rgba(18, 109, 245, 1), rgba(72, 61, 139, 1));
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 5px;
+    background: rgba(255, 204, 0, 0.7); /* Decorative bar with accent color */
+    border-radius: 5px;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Pulsing animation for decorative element */
+@keyframes pulse {
+    0% {
+        transform: translateX(-50%) scaleX(1);
+    }
+    50% {
+        transform: translateX(-50%) scaleX(1.5);
+    }
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>أبحاث أعضاء هيئة التدريس في مجال اللغة العربية</h1>
+        <p>احتفل بجمال وإرث لغة الضاد في يومها العالمي</p>
+    </header>
+
+    <nav>
+        <a href="about.html">عن اليوم</a>
+        <a href="index.html">فعاليات</a>
+        <a href="#gallery">معرض الصور</a>
+    </nav>
+
+    <div class="research-container">
+        <div class="research-item" id="research1">
+            <h3>د. مها العمري</h3><br>
+            <p class="search">عنوان البحث</p>
+            <p class="prof">"تحليل وتصحيح النصوص العربية المصابة بالديسليكسيا"</p>
+            <a class="link" href="javascript:void(0)" onclick="toggleDetails('research1-details')">عرض التفاصيل</a>
+            <div class="research-details" id="research1-details">
+                <p><strong>ملخص البحث:ديسليكسيا هي اضطراب يؤثر على مهارات القراءة والكتابة، ويصعب على المصابين إتقان اللغة المكتوبة. يصف هذا البحث تطوير "مجموعة بيانات بنغور لديسليكسيا العربية" (BDAC) لتحليل وتصحيح النصوص العربية المصابة بالديسليكسيا بشكل آلي. كما طور البحث تصنيفاً جديداً للأخطاء التي يرتكبها المصابون بالديسليكسيا في اللغة العربية، والذي يتضمن 37 نوعاً من الأخطاء الإملائية مقسمة إلى تسع فئات.</strong> يتناول هذا البحث تأثير وسائل التواصل الاجتماعي على اللغة العربية في العصر الحديث وكيفية تطور المفردات والتراكيب اللغوية.,</strong></p>
+                <a class="go" href="out.pdf" target="_blank">رابط البحث</a>
+            </div>
+        </div>
+
+        <div class="research-item" id="research2">
+            <h3>د. اكرام معلى</h3>
+            <p class="search">عنوان البحث</p>
+            <p class="prof">"التعرف على الحروف العربية في المشاهد الطبيعية باستخدام الترميز المتناثر لتمثيل الميزات"</p>
+            <a class="link" href="javascript:void(0)" onclick="toggleDetails('research2-details')">عرض التفاصيل</a>
+            <div class="research-details" id="research2-details">
+                <p><strong>ملخص البحث:يتم تطبيق هذه التقنية على التعرف على الحروف العربية في الصور التي تحتوي على نصوص مكتوبة بخطوط مختلفة وفي ظروف تصوير متباينة، مثل الصور الملتقطة في أماكن عامة أو صور تحتوي على تشويش أو تأثيرات بيئية. يتم استخدام الترميز المتناثر لتحديد الميزات البصرية الرئيسية التي تساعد في التعرف على الحروف والكلمات العربية بدقة عالية، مما يعزز من كفاءة نظم التعرف البصري على النصوص العربية.</strong>
+
+                    الهدف الرئيسي من البحث هو تحسين دقة التعرف على النصوص العربية في المشاهد الطبيعية، خاصة في الحالات التي يكون فيها النص غير واضح أو مشوه بسبب عوامل مثل الإضاءة السيئة أو التداخل البصري.</p>
+                <a class="go" href="" target="_blank">رابط البحث</a>
+            </div>
+        </div>
+
+        <div class="research-item" id="research3">
+            <h3> د. محمد الغامدي</h3>
+            <p class="search">عنوان البحث</p>
+            <p class="prof">"تقنية العلامة المائية المعتمدة على الميزات لنصوص اللغة العربية للكشف عن هجمات التلاعب "</p>
+            <a class="link" href="javascript:void(0)" onclick="toggleDetails('research3-details')">عرض التفاصيل</a>
+            <div class="research-details" id="research3-details">
+                <p><strong>تطبيق تقنية العلامة المائية على النصوص العربية بهدف حماية هذه النصوص من هجمات التلاعب مثل التعديل أو التحريف غير المرغوب فيه.<br> التقنية تعتمد على استخراج الميزات الخاصة بالنصوص العربية، مثل خصائص الكتابة وتوزيع الكلمات، ومن ثم تضمين العلامة المائية باستخدام هذه الميزات بطريقة تضمن صعوبة الكشف أو إزالة العلامة المائية.</strong>
+               من خلال استخدام هذه التقنية، يمكن الكشف عن أي تلاعب أو تعديل في النصوص بشكل دقيق، مما يساهم في حماية النصوص من الهجمات أو التلاعبات التي قد تؤثر على مصداقيتها أو سلامتها.</p>
+                <a class="go" href="http://example.com" target="_blank">رابط البحث</a>
+            </div>
+        </div>
+
+        <div class="research-item" id="research4">
+            <h3>د. سنيه اللجمي</h3>
+            <p class="search">عنوان البحث</p>
+            <p class="prof">"نظام فهرسة واسترجاع الفيديو المعتمد على النصوص العربية معزز بالمحتوى الدلالي والتغذية الراجعة حول الصلة "</p>
+            <a class="link" href="javascript:void(0)" onclick="toggleDetails('research4-details')">عرض التفاصيل</a>
+            <div class="research-details" id="research4-details">
+                <p><strong>الفهرسة النصية: النظام يعتمد على تحليل النصوص العربية المرتبطة بالفيديوهات مثل العناوين، الأوصاف، والكلمات المفتاحية.
+                    المحتوى الدلالي: يتم تحليل المعاني وراء الكلمات في النصوص العربية باستخدام تقنيات الذكاء الاصطناعي لتوفير فهرسة دقيقة تحاكي الفهم البشري للمحتوى.
+                    التغذية الراجعة حول الصلة: النظام يشمل آلية للتغذية الراجعة التي تسمح للمستخدم بتحديد مدى صلة النتائج المعروضة بالاستعلامات المقدمة. بناءً على ذلك، يتم تحسين نتائج البحث والانتقاء ليصبح أكثر دقة وتخصيصًا بناءً على تفاعل المستخدم.</strong>
+                    يهدف هذا النظام إلى تحسين عملية البحث في الفيديوهات العربية عبر الإنترنت عن طريق الاستفادة من النصوص المدخلة وتعزيز الصلة بين محتوى الفيديو وطلبات البحث من خلال تقنيات الذكاء الاصطناعي.</p>
+                <a class="go" href="" target="_blank">رابط البحث</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة | جامعة اللغة العربية</p>
+    </footer>
+
+    <script>
+        function toggleDetails(researchId) {
+            var details = document.getElementById(researchId);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
